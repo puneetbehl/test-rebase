@@ -24,9 +24,8 @@ Brief summary/description of the plugin.
     def documentation = "http://grails.org/plugin/myplugin"
 
     // Extra (optional) plugin metadata
-
-    // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
+    
+    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
 //    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
