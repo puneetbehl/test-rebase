@@ -4,16 +4,13 @@ import grails.plugins.*
 
 class MypluginGrailsPlugin extends Plugin {
 
-    // the version or versions of Grails the plugin is designed for
     def grailsVersion = "4.0.8 > *"
-    // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
     def title = "Myplugin" // Headline display name of the plugin
-    def author = "Your name"
+    def author = "John Doe"
     def authorEmail = ""
     def description = '''\
 Brief summary/description of the plugin.
