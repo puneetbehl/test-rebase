@@ -18,6 +18,15 @@ jobs:
         uses: cirrus-actions/rebase@1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Print Output
+        run: |
+          echo $CONCLUSION
+          echo $OUTCOME
+          echo $OUTPUT
+        env:
+          CONCLUSION: ${{ steps.automatic-rebase.conclusion }}
+          OUTCOME: ${{ steps.automatic-rebase.outcome }}
+          OUTPUT: ${{ steps.automatic-rebase.outputs }}
       - name: Update comment with Thumbs-up
         if: ${{ steps.automatic-rebase.conclusion == 'success' }}
         uses: peter-evans/create-or-update-comment@v1
